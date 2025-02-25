@@ -5,12 +5,12 @@
 class Latitude55Cli < Formula
   desc ""
   homepage "https://github.com/hloughrey/latitude55-cli"
-  version "0.0.6"
+  version "0.0.7"
   license "MIT"
 
   on_macos do
-    url "https://github.mycompany.com/foo/bar/releases/download/v0.0.6/latitude55-cli_0.0.6_darwin_all.tar.gz"
-    sha256 "6c8bdb41c4e90f4094b2b15bf196ad75a37f9a18b374adb9110483d8231945e6"
+    url "https://github.com/hloughrey/latitude55-cli/releases/download/v0.0.7/latitude55-cli_0.0.7_darwin_all.tar.gz"
+    sha256 "6bb5ed50b38e62607ae3b252dbfef8ecabf12cab3725bc6ea8f1c80fc1350f87"
 
     def install
       bin.install "latitude55-cli"
@@ -20,8 +20,8 @@ class Latitude55Cli < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.mycompany.com/foo/bar/releases/download/v0.0.6/latitude55-cli_0.0.6_linux_amd64.tar.gz"
-        sha256 "c62a7b84ca67c5cba385f5eb0dda36a76440d3b39101685074a137f4be4371e6"
+        url "https://github.com/hloughrey/latitude55-cli/releases/download/v0.0.7/latitude55-cli_0.0.7_linux_amd64.tar.gz"
+        sha256 "364635e48760716b3979535e8275ea9d7d670458636a553f3752870380b0c117"
 
         def install
           bin.install "latitude55-cli"
@@ -30,8 +30,8 @@ class Latitude55Cli < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.mycompany.com/foo/bar/releases/download/v0.0.6/latitude55-cli_0.0.6_linux_arm64.tar.gz"
-        sha256 "b1b796dc8e19cab38cb3f4342b76a5fd1b7390ee53744b9639fca36877ff56ef"
+        url "https://github.com/hloughrey/latitude55-cli/releases/download/v0.0.7/latitude55-cli_0.0.7_linux_arm64.tar.gz"
+        sha256 "6d627d8561cd82f76e8f5d5c9a3a2f832ccb8930bc4515a5849bed586df70282"
 
         def install
           bin.install "latitude55-cli"
